@@ -1,0 +1,52 @@
+.Reg{
+   @apply h-[100vh] w-[100%] bg-[#E8ECD7]
+}
+.allCon{
+   @apply flex justify-center items-center w-full h-[100vh] 
+}
+.regDev{
+   @apply lg:w-[1000px] lg:h-[620px] lg:bg-gradient-to-r from-[#81BFDA] to-[#78B3CE] lg:shadow-[0px_0px_12px_2px_rgba(22,_32,_21,_0.8)] lg:rounded-xl flex justify-center items-center relative
+}
+.regDev h1{
+   @apply mt-4 absolute top-0 lg:left-[332px] lg:text-3xl font-Capital font-bold 
+}
+.mainReg{
+   @apply pt-10 px-5 bg-gradient-to-r from-[#47663B] to-[#1F4529] w-[320px] h-[500px] rounded-lg shadow-[inset_0px_0px_12px_2px_rgba(0,_0,_0,_0.7)] flex justify-center items-center
+}
+.regText{
+   @apply flex flex-col justify-center items-center gap-7 pb-5
+}
+.regText h2 {
+   @apply text-3xl text-white font-Capital font-semibold tracking-wider
+}
+.regText .inputAll{
+   @apply flex flex-col gap-2
+}
+.regText .inputAll input{
+   @apply py-2 pl-3 w-[250px] rounded-md font-SmallFont border-[2px] border-green-200 shadow-[0px_0px_4px_5px_rgba(147,_51,_234,_0.15)]
+}
+.regText button{
+   @apply py-2 px-5 bg-slate-100 text-2xl rounded-lg shadow-[0px_0px_12px_4px_rgba(59,_130,_246,_0.15)] font-bold transition-all duration-500 hover:text-white hover:bg-black hover:tracking-wider 
+}
+.mainReg .Icon{
+   @apply flex gap-5 
+}
+.mainReg .Icon a{
+   @apply text-2xl text-white 
+}
+.inputAll .pass{
+   @apply w-[250px] relative
+}
+.inputAll .pass .eyeIcon{
+   @apply absolute top-[50%] right-3 translate-y-[-50%] text-xl
+}
+.customErr{
+   @apply text-red-500 text-[12px]
+}
+.have_account p{
+   @apply text-white font-light
+}
+.have_account p a{
+   @apply font-bold
+}
+
