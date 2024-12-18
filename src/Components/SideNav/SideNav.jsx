@@ -31,7 +31,7 @@ const SideNav = () => {
 
   return (
     <>
-    <nav className='h-screen w-[200px] bg-slate-900 dark:bg-white'>
+    <nav className='h-[100vh] w-[200px] bg-slate-900 dark:bg-white'>
          <h2 className=' result text-white text-[28px] font-SmallFont p-4 dark:text-black'>All Note</h2>
          <ul className='mt-10 flex flex-col gap-10 pl-2 '>
             <li className='flex'> 
