@@ -27,11 +27,11 @@ const handelBut = (e)=>{
   // ========== for text
   e.preventDefault()
 if(formData.userName == "")
-   setError((prev)=>({...prev , userError: "Plise fullfill this form"}))
+   setError((prev)=>({...prev , userError: "Pleas fullfill this form"}))
   if(formData.userEmail == "")
-    setError((prev)=>({...prev , emailError:"Plise fullfill this form"}))
+    setError((prev)=>({...prev , emailError:"Pleas fullfill this form"}))
   if(formData.userPassword == "")
-    setError((prev)=>({...prev ,passwordError :"Plise fullfill this form"}))
+    setError((prev)=>({...prev ,passwordError :"Pleas fullfill this form"}))
   // ========== for button
 else{
   signInWithEmailAndPassword(auth, formData.userEmail, formData.userPassword)
@@ -57,8 +57,8 @@ else{
           transition: Bounce,
           });
           // =-=-=-=-=-=-=-=-=-=-=-=- store the user data
-dispach(userData(user))
-localStorage.setItem('userInfo' , JSON.stringify(user))
+      dispach(userData(user))
+      localStorage.setItem('userInfo' , JSON.stringify(user))
 
       }else{
         toast.error('Email is not verified!', {

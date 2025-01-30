@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import './Register.css'
-import { FaGoogle } from "react-icons/fa";
-import { FaApple } from "react-icons/fa";
-import { TiSocialFacebook } from "react-icons/ti";
 import { FaEye } from "react-icons/fa";
 import { GoEyeClosed } from "react-icons/go";
 import { getAuth, createUserWithEmailAndPassword, sendEmailVerification, updateProfile  } from "firebase/auth";
@@ -27,11 +24,11 @@ const handelBut = (e)=>{
   // ========== for text
   e.preventDefault()
 if(formData.userName == "")
-   setError((prev)=>({...prev , userError: "Plise fullfill this form"}))
+   setError((prev)=>({...prev , userError: "Pleas fullfill this form"}))
   if(formData.userEmail == "")
-    setError((prev)=>({...prev , emailError:"Plise fullfill this form"}))
+    setError((prev)=>({...prev , emailError:"Pleas fullfill this form"}))
   if(formData.userPassword == "")
-    setError((prev)=>({...prev ,passwordError :"Plise fullfill this form"}))
+    setError((prev)=>({...prev ,passwordError :"Pleas fullfill this form"}))
   // ========== for button
 else{
   createUserWithEmailAndPassword(auth, formData.userEmail, formData.userPassword)
@@ -142,13 +139,13 @@ if(errorCode=="auth/weak-password"){
              </div>
             </div>
             <button onClick={handelBut} type="submit" >Submit</button>
-            <div className="Icon">
+            {/* <div className="Icon">
               <Link to="https://www.google.com/"><FaGoogle /></Link>
               <Link to="https://www.facebook.com/"><TiSocialFacebook />
               </Link>
               <Link to="https://support.apple.com/"><FaApple />
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 </div>
@@ -162,3 +159,4 @@ if(errorCode=="auth/weak-password"){
 }
 
 export default Register
+

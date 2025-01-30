@@ -2,6 +2,8 @@ import React from 'react'
 import AddCard from '../Components/AddCard/AddCard'
 import SingleNote from '../Components/SingleNote/SingleNote'
 import PinNotes from '../Components/PinNotes/PinNotes'
+import PinNote from './PinNote'
+
 
 const AllNote = () => {
   return (
@@ -20,7 +22,7 @@ const AllNote = () => {
         <h2 className='text-[18px] lg:text-[25px] font-Capital font-semibold'>All Note</h2>
       </div>
       <hr className=' h-[2px] bg-slate-400'/>
-      <SingleNote/>
+      <SingleNote/> 
 
       
     </div>

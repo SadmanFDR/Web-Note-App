@@ -1,0 +1,6 @@
+.main_nav li a{
+   @apply text-[16px] md:text-[20px] 
+}
+.for_slide_icons{
+   @apply absolute top-6 right-[-40px] text-xl text-white dark:text-black overflow-hidden w-[40px] h-[40px] rounded-r-lg rounded-br-lg bg-black dark:bg-gray-300  flex justify-center items-center lg:hidden
+}

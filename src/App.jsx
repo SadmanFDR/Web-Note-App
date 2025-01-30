@@ -7,9 +7,9 @@ import { ToastContainer } from 'react-toastify'
 import Login from './Components/Login/Login'
 import LayoutOne from './LayoutOne/LayoutOne'
 import Home from './Pages/Home'
-import PinNote from './Pages/pinNote'
-import BinNote from './Pages/binNote'
 import AllNote from './Pages/AllNote'
+import BinNote from './Pages/BinNote'
+import PinNote from './Pages/PinNote'
 
 
 function App() {

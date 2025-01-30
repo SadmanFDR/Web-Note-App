@@ -1,20 +1,20 @@
 .Reg{
-   @apply h-[100vh] w-[100%] bg-[#E8ECD7]
+   @apply lg:h-[100vh] lg:w-[100%] bg-[#E8ECD7]
 }
 .allCon{
-   @apply flex justify-center items-center w-full h-[100vh] 
+   @apply flex justify-center items-center w-full lg:h-[100vh] 
 }
 .regDev{
    @apply lg:w-[1000px] lg:h-[620px] lg:bg-gradient-to-r from-[#81BFDA] to-[#78B3CE] lg:shadow-[0px_0px_12px_2px_rgba(22,_32,_21,_0.8)] lg:rounded-xl flex justify-center items-center relative
 }
 .mainReg{
-   @apply pt-10 px-5 bg-gradient-to-r from-[#47663B] to-[#1F4529] w-[320px]  rounded-lg shadow-[inset_0px_0px_12px_2px_rgba(0,_0,_0,_0.7)] flex justify-center items-center
+   @apply pt-10 px-5 w-full bg-gradient-to-r from-[#47663B] to-[#1F4529] lg:w-[320px]  rounded-lg shadow-[inset_0px_0px_12px_2px_rgba(0,_0,_0,_0.7)] flex justify-center items-center
 }
 .regText{
    @apply flex flex-col justify-center items-center gap-7 pb-5
 }
 .regText h2 {
-   @apply text-3xl text-white font-Capital font-semibold tracking-wider
+   @apply text-3xl  text-white font-Capital font-semibold tracking-wider
 }
 .regText .inputAll{
    @apply flex flex-col gap-2
@@ -40,3 +40,6 @@
 .have_account p a{
    @apply font-bold
 }
+
+
+
